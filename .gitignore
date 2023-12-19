@@ -6,3 +6,5 @@
 /src/.vs
 /src/ScryfallExtractor.Core/obj
 /src/ScryfallExtractor.Service/obj
+/src/ScryfallExtractor.Service.Tests/bin
+/src/ScryfallExtractor.Service.Tests/obj
