@@ -4,7 +4,11 @@
 
 /.vs
 /src/.vs
+/src/ScryfallExtractor.Core/bin
 /src/ScryfallExtractor.Core/obj
+/src/ScryfallExtractor.Service/bin
 /src/ScryfallExtractor.Service/obj
 /src/ScryfallExtractor.Service.Tests/bin
 /src/ScryfallExtractor.Service.Tests/obj
+/src/ScryfallExtractor.UI.Maui/bin
+/src/ScryfallExtractor.UI.Maui/obj
