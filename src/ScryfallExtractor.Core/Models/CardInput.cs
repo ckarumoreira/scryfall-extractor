@@ -3,10 +3,10 @@ using ScryfallExtractor.Core.Converters;
 
 namespace ScryfallExtractor.Core.Models {
     public enum CardLegality {
-        NotLegal = 0,
-        Legal = 1,
-        Restricted = 2,
-        Banned = 3
+        NotLegal = 1,
+        Legal = 2,
+        Restricted = 3,
+        Banned = 4
     }
 
     public sealed class CardInput {
