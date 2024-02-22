@@ -1,8 +1,9 @@
 ﻿using System.Text;
 
-namespace ScryfallExtractor.Core.Models;
+namespace ScryfallExtractor.Core.Models.Input;
 
-public class CardSummary {
+public class CardSummary
+{
     public string Name { get; set; }
     public CardRarity LowestRarity { get; set; }
     public CardRarity HighestRarity { get; set; }
@@ -13,7 +14,8 @@ public class CardSummary {
     public bool IsDigitalOnly { get; set; }
     public string ImageUri { get; set; }
 
-    public static string ExportHeaderToCsv() {
+    public static string ExportHeaderToCsv()
+    {
         string[] elements = [
             nameof(Name),
             nameof(LowestRarity),
@@ -29,7 +31,8 @@ public class CardSummary {
         return string.Join("|", elements);
     }
 
-    public string ExportUnitToCsv() {
+    public string ExportUnitToCsv()
+    {
         string[] elements = [
             Name,
             LowestRarity.ToString(),

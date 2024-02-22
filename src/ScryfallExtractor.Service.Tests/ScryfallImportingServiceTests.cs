@@ -1,6 +1,7 @@
-using ScryfallExtractor.Core.Models;
+using ScryfallExtractor.Core.Models.Input;
 
-namespace ScryfallExtractor.Service.Tests {
+namespace ScryfallExtractor.Service.Tests
+{
     public class ScryfallImportingServiceTests {
         [Fact]
         public void EndToEndExtraction() {

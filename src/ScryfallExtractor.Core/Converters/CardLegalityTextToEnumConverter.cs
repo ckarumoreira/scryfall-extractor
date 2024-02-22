@@ -1,8 +1,9 @@
 ﻿using System.Text.Json.Serialization;
 using System.Text.Json;
-using ScryfallExtractor.Core.Models;
+using ScryfallExtractor.Core.Models.Input;
 
-namespace ScryfallExtractor.Core.Converters {
+namespace ScryfallExtractor.Core.Converters
+{
     public class CardLegalityTextToEnumConverter : JsonConverter<CardLegality> {
         private const string LegalString = "legal";
         private const string NotLegalString = "not_legal";

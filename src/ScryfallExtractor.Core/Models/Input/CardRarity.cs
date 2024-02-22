@@ -1,6 +1,7 @@
-﻿namespace ScryfallExtractor.Core.Models;
+﻿namespace ScryfallExtractor.Core.Models.Input;
 
-public enum CardRarity : byte {
+public enum CardRarity : byte
+{
     Common = 0,
     Uncommon = 1,
     Rare = 2,

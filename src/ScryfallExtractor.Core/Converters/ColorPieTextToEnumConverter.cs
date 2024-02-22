@@ -1,8 +1,9 @@
 ﻿using System.Text.Json.Serialization;
 using System.Text.Json;
-using ScryfallExtractor.Core.Models;
+using ScryfallExtractor.Core.Models.Input;
 
-namespace ScryfallExtractor.Core.Converters {
+namespace ScryfallExtractor.Core.Converters
+{
     public class ColorPieTextToEnumConverter : JsonConverter<ColorPie> {
         public override ColorPie Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options) {
             if (reader.TokenType is JsonTokenType.StartArray) {

@@ -1,10 +1,11 @@
 ﻿using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text.Json;
-using ScryfallExtractor.Core.Models;
+using ScryfallExtractor.Core.Models.Input;
 using ScryfallExtractor.Core.Services;
 
-namespace ScryfallExtractor.Service {
+namespace ScryfallExtractor.Service
+{
     public class ScryfallImportingService : IScryfallImportingService {
         private readonly JsonSerializerOptions _serializerOptions;
 

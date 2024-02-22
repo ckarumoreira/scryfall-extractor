@@ -1,15 +1,18 @@
 ﻿using System.Text.Json.Serialization;
 using ScryfallExtractor.Core.Converters;
 
-namespace ScryfallExtractor.Core.Models {
-    public enum CardLegality {
+namespace ScryfallExtractor.Core.Models.Input
+{
+    public enum CardLegality
+    {
         NotLegal = 1,
         Legal = 2,
         Restricted = 3,
         Banned = 4
     }
 
-    public sealed class CardInput {
+    public sealed class CardInput
+    {
         // object
         [JsonPropertyName("object")]
         public string Object { get; set; }
@@ -194,18 +197,20 @@ namespace ScryfallExtractor.Core.Models {
         [JsonPropertyName("purchase_uris")]
         public PurchaseUriInput PurchaseUris { get; set; }
 
-        public class PurchaseUriInput {
+        public class PurchaseUriInput
+        {
             // tcgplayer
             [JsonPropertyName("tcgplayer")]
             public string TcgPlayer { get; set; }
             // cardmarket
             [JsonPropertyName("cardmarket")]
-            public string CardMarket { get; set; } 
+            public string CardMarket { get; set; }
             // cardhoarder
             [JsonPropertyName("cardhoarder")]
             public string CardHoarder { get; set; }
         }
-        public class RelatedUriInput {
+        public class RelatedUriInput
+        {
             // gatherer
             [JsonPropertyName("gatherer")]
             public string Gatherer { get; set; }
@@ -219,7 +224,8 @@ namespace ScryfallExtractor.Core.Models {
             [JsonPropertyName("edhrec")]
             public string EdhRec { get; set; }
         }
-        public class PricesInput {
+        public class PricesInput
+        {
             // usd
             [JsonPropertyName("usd")]
             public string? Usd { get; set; }
@@ -239,7 +245,8 @@ namespace ScryfallExtractor.Core.Models {
             [JsonPropertyName("tix")]
             public string? Tix { get; set; }
         }
-        public class LegalitiesInput {
+        public class LegalitiesInput
+        {
             // standard
             [JsonPropertyName("standard"), JsonConverter(typeof(CardLegalityTextToEnumConverter))]
             public CardLegality Standard { get; set; }
@@ -307,7 +314,8 @@ namespace ScryfallExtractor.Core.Models {
             [JsonPropertyName("predh"), JsonConverter(typeof(CardLegalityTextToEnumConverter))]
             public CardLegality PrEdh { get; set; }
         }
-        public class ImageUriInput {
+        public class ImageUriInput
+        {
             // small
             [JsonPropertyName("small")]
             public string Small { get; set; }

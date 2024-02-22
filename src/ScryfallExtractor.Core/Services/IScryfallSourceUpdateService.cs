@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using ScryfallExtractor.Core.Models;
+using ScryfallExtractor.Core.Models.Config;
 
-namespace ScryfallExtractor.Core.Services {
+namespace ScryfallExtractor.Core.Services
+{
     public interface IScryfallSourceUpdateService {
         Task<bool> IsSourceBulkUpToDate(ExtractorConfiguration configuration);
         Task UpdateSourceBulk(ExtractorConfiguration configuration);

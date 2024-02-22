@@ -1,8 +1,9 @@
 ﻿using System.Text.Json;
-using ScryfallExtractor.Core.Models;
+using ScryfallExtractor.Core.Models.Config;
 using ScryfallExtractor.Core.Services;
 
-namespace ScryfallExtractor.Service {
+namespace ScryfallExtractor.Service
+{
     public class ScryfallSourceUpdateService : IScryfallSourceUpdateService {
         public async Task<bool> IsSourceBulkUpToDate(ExtractorConfiguration configuration) {
             using HttpClient client = new HttpClient();

@@ -1,7 +1,8 @@
-﻿namespace ScryfallExtractor.Core.Models;
+﻿namespace ScryfallExtractor.Core.Models.Input;
 
 [Flags]
-public enum ColorPie : byte {
+public enum ColorPie : byte
+{
     None = 0,
     White = 1,
     Black = 2,
@@ -10,8 +11,10 @@ public enum ColorPie : byte {
     Blue = 16
 }
 
-public static class ColorPieExtensionMethods {
-    public static string ParseToString(this ColorPie item) {
+public static class ColorPieExtensionMethods
+{
+    public static string ParseToString(this ColorPie item)
+    {
         if (item is ColorPie.None)
             return "Colorless";
 
